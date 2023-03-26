@@ -2,6 +2,8 @@
 
 ![Alacena](https://github.com/ausgomez/alacena-next-app/blob/main/public/logo.png?raw=true)
 
+### Demo url: https://cook.auscode.me/
+
 ## 🥡 Story
 
 So in 2020 created a [Vue App](https://github.com/ausgomez/alacena-vue-3) a while a back using [Spoonacular API](https://spoonacular.com/food-api) to fetch recipes and find new ones based on your ingredients available.
@@ -18,6 +20,7 @@ Are you tired of cooking the same old meals every day? Do you want to try someth
 
 This app is designed to help you discover delicious and interesting recipes online. With a sleek and intuitive interface, you can easily search for recipes by ingredient, cuisine, or dietary restrictions.
 
+<img alt="Funny meme" src="https://media2.giphy.com/media/K7txBCu1lvLTW/giphy.gif" align="right"/>
 ## ⚒️ Tech Stack
 
 So here is the stack I am using for this app:
