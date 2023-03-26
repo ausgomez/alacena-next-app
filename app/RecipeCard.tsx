@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import {
     Box,
     Heading,
@@ -16,6 +16,22 @@ import Link from 'next/link'
 
 export default function RecipeCard({ recipe }: any) {
     const [liked, setLiked] = useState(false);
+
+    React.useEffect(() => {
+        const savedRecipes = localStorage.getItem('likedRecipes');
+        if (savedRecipes) {
+            const parsedRecipes = JSON.parse(savedRecipes);
+            if (parsedRecipes.includes(recipe.id)) {
+                setLiked(true);
+            }
+        }
+    }, []);
+
+    const handleLike = () => {
+        setLiked(!liked);
+        const savedRecipes = localStorage.getItem('likedRecipes');
+        localStorage.setItem('likedRecipes', JSON.stringify([...JSON.parse(savedRecipes ?? '[]'), recipe.id]));
+    };
 
     return (
         <Center py={6}>
@@ -68,7 +84,7 @@ export default function RecipeCard({ recipe }: any) {
                         roundedBottom={'sm'}
                         cursor={'pointer'}
                         w="full">
-                        <Link href='/'>
+                        <Link href={`/recipe/${recipe.id}`}>
                             <Text fontSize={'md'} fontWeight={'semibold'}>
                                 View more
                             </Text>
@@ -82,7 +98,7 @@ export default function RecipeCard({ recipe }: any) {
                         roundedBottom={'sm'}
                         borderLeft={'1px'}
                         cursor="pointer"
-                        onClick={() => setLiked(!liked)}>
+                        onClick={() => handleLike()}>
                         {liked ? (
                             <BsHeartFill fill="red" fontSize={'24px'} />
                         ) : (
