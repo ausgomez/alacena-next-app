@@ -21,6 +21,8 @@ Are you tired of cooking the same old meals every day? Do you want to try someth
 This app is designed to help you discover delicious and interesting recipes online. With a sleek and intuitive interface, you can easily search for recipes by ingredient, cuisine, or dietary restrictions.
 
 <img alt="Funny meme" src="https://media2.giphy.com/media/K7txBCu1lvLTW/giphy.gif" align="right"/>
+
+
 ## ⚒️ Tech Stack
 
 So here is the stack I am using for this app:
