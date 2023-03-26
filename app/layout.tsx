@@ -15,7 +15,9 @@ export default function RootLayout({
       <body>
         <CacheProvider>
           <ChakraProvider>
-            <SidebarWithHeader children={children} />
+            <SidebarWithHeader>
+              {children}
+            </SidebarWithHeader>
           </ChakraProvider>
         </CacheProvider>
       </body>
