@@ -1,38 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Alacena App
 
-## Getting Started
+![Alacena](https://github.com/ausgomez/alacena-next-app/blob/main/public/logo.png?raw=true)
 
-First, run the development server:
+## 🥡 Story
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+So in 2020 created a [Vue App](https://github.com/ausgomez/alacena-vue-3) a while a back using [Spoonacular API](https://spoonacular.com/food-api) to fetch recipes and find new ones based on your ingredients available.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I am recreating the same app but using a whole different stack, but same idea.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I want to give it a try to Next 13 and see if is really that cool.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+But first let's ask [ChatGPT](https://openai.com/blog/chatgpt) to write me a nice elevator pitch for this app:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 🤖 Elevator pitch
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Are you tired of cooking the same old meals every day? Do you want to try something new and exciting in the kitchen? Look no further than my new Next.js app!
 
-## Learn More
+This app is designed to help you discover delicious and interesting recipes online. With a sleek and intuitive interface, you can easily search for recipes by ingredient, cuisine, or dietary restrictions.
 
-To learn more about Next.js, take a look at the following resources:
+## ⚒️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+So here is the stack I am using for this app:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Giving a try to the new [Next 13](https://nextjs.org)
+- I picked [Chakra UI](https://chakra-ui.com/) as my UI Framework
+- I am using [Chakra Themes](https://chakra-templates.dev/) for fast development
 
-## Deploy on Vercel
+### ☁️ Cloud Functions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I am using [Digital Ocean - Cloud Functions](https://m.do.co/c/7b57c70c6a1b) as my backend. You can see my repo here https://github.com/ausgomez/alacena-cloudfunctions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Also if you want to use Digital Ocean, here is my referal link 👇
+
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg)](https://www.digitalocean.com/?refcode=7b57c70c6a1b&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
