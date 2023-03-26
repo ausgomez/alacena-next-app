@@ -11,7 +11,7 @@ const getRecipes = async () => {
   return await res.json()
 }
 
-export default function page() {
+export default function Page() {
 
   const [isLoading, setIsLoading] = React.useState(false)
   const [recipes, setRecipes] = React.useState([])
