@@ -1,6 +1,5 @@
 # Alacena - Food Recipe Explorer App
 
-#![Alacena](https://github.com/ausgomez/alacena-next-app/blob/main/public/logo.png?raw=true)
 <img src="https://github.com/ausgomez/alacena-next-app/blob/main/public/logo.png?raw=true" align="center"/>
 
 ### Demo url: https://cook.auscode.me/
